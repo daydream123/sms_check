@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Copyright (c) 2010-2011, The MiCode Open Source Community (www.micode.net)
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <dimen name="text_font_size_super">33sp</dimen>
+    <dimen name="text_font_size_large">26sp</dimen>
+    <dimen name="text_font_size_medium">20sp</dimen>
+    <dimen name="text_font_size_normal">17sp</dimen>
+    <dimen name="text_font_size_small">14sp</dimen>
+    <!-- text size -->
+    <dimen name="text_size_xlarge">24sp</dimen>
+    <dimen name="text_size_title">19sp</dimen>
+    <dimen name="text_size_list">16sp</dimen>
+    <dimen name="text_size_info">15sp</dimen>
+    <dimen name="text_size_hint">13sp</dimen>
+    <dimen name="text_size_xsmall">11sp</dimen>
+    <dimen name="text_size_small">9sp</dimen>
+
+    <dimen name="common_margin">15dip</dimen>
+    <dimen name="actionbar_height">52dp</dimen>
+    <dimen name="warning_line_space">5dp</dimen>
+    <dimen name="common_row_spacing">8dp</dimen>
+
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="item_height">44dp</dimen>
+
+    <dimen name="big_button_height">45dip</dimen>
+    <dimen name="middle_button_height">36dip</dimen>
+    <dimen name="small_button_height">30dip</dimen>
+    <dimen name="round_button_height">45dip</dimen>
+    <dimen name="submit_round_button_width">220dip</dimen>
+</resources>
