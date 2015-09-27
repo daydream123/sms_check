@@ -15,7 +15,7 @@ import android.util.Log;
  */
 public class SmsService extends Service{
     private static final String TAG = "SmsService";
-    private static final int CHECK_INTERVAL = 30 * 1000;
+    private static final int CHECK_INTERVAL = 10 * 1000;
     private PendingIntent mPendIntent;
     private AlarmManager mAlarmManager;
 

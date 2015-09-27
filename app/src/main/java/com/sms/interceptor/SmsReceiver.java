@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.provider.Telephony;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 
 /**
  * Created by zhangfei on 2015/7/18.
@@ -28,6 +29,7 @@ public class SmsReceiver extends BroadcastReceiver {
             }
             EmailUtils.checkSmsInLoop(context);
         } else if (ACTION_CHECK_SMS_IN_LOOP.equals(action)) {
+            Log.d("sms", "check in loop");
             EmailUtils.checkSmsInLoop(context);
         } else if (intent.getAction().equals(Intent.ACTION_NEW_OUTGOING_CALL)) {
             SmsService.startService(context);

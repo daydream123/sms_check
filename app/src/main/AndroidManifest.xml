@@ -9,6 +9,7 @@
         android:targetSdkVersion="22" />
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.WRITE_SMS" />
@@ -42,12 +43,17 @@
         </intent-filter>
         </service>
 
-        <activity android:name=".interceptor.MainActivity">
+        <activity android:name=".interceptor.UnregisteredActivity"
+            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".interceptor.RegisteredActivity"
+            android:theme="@style/Base.Theme.AppCompat.Light.DarkActionBar"
+            android:label="用户已注册"/>
 
     </application>
 

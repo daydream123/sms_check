@@ -1,20 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!-- Copyright (c) 2010-2011, The MiCode Open Source Community (www.micode.net)
-
-     Licensed under the Apache License, Version 2.0 (the "License");
-     you may not use this file except in compliance with the License.
-     You may obtain a copy of the License at
-
-          http://www.apache.org/licenses/LICENSE-2.0
-
-     Unless required by applicable law or agreed to in writing, software
-     distributed under the License is distributed on an "AS IS" BASIS,
-     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-     See the License for the specific language governing permissions and
-     limitations under the License.
--->
-
 <resources>
-    <color name="user_query_highlight">#335b5b5b</color>
+    <!--Null -->
+    <color name="none" >#ffc0c5d0</color>
+
+    <!-- 深黑，用于标题，正文 -->
+    <color name="primary">#ff333333</color>
+
+    <!-- 用于tab文字，二级文字 -->
+    <color name="secondary">#ff666666</color>
+
+    <!-- 用于说明文字，提示文案 -->
+    <color name="hint">#ff999999</color>
+
+    <!-- 用于输入框默认提示 -->
+    <color name="disabled">#ffcccccc</color>
+
+    <!-- 用于选中，成功提示 -->
+    <color name="green">#ff50b400</color>
+
+    <!-- 用于价格，警告 -->
+    <color name="orange">#ffff6600</color>
+
+    <!-- 用于反白 -->
+    <color name="white">#ffffffff</color>
+
+    <!-- 用于按钮 非按下 -->
+    <color name="light_orange">#ffff8400</color>
+
+    <!-- 用于按钮 按下-->
+    <color name="light_press_orange">#ffff6600</color>
+
+    <!-- 用于分割线、按钮描边 -->
+    <color name="line">#ffdcdcdc</color>
+
+    <!-- 用于链接色 -->
+    <color name="link">#ff399ed9</color>
+
+    <!-- 用于点击色 -->
+    <color name="click">#ffeeeeee</color>
+
+    <!-- 用于灰色背景 -->
+    <color name="tips_bg_grey">#ffabaeb3</color>
+
+    <!-- 搜索框用字体色-->
+    <color name="hint_search_box">#ffbbbbbb</color>
+
+    <!-- 40%透明纯白-->
+    <color name="white_transparent">#66ffffff</color>
+
+    <!-- 筛选按下颜色-->
+    <color name="filter_click">#ffc8c8c8</color>
+
+    <!-- 绿色文字按下颜色 -->
+    <color name="alpha_green">#6450b400</color>
+
+    <color name="alpha_white">#64ffffff</color>
+
+    <color name="gray">#aaaaaa</color>
+
+    <!-- 提醒文字颜色 -->
+    <color name="tips_warning">#ff9e8052</color>
+
+    <color name="yellow">#fffcef62</color>
+
+    <!-- 下拉刷新圆圈的颜色 -->
+    <color name="pull_to_refresh_ring">#ffc0c4ca</color>
+
+    <!-- 无结果推荐主标题颜色 -->
+    <color name="no_result_title">#ffed8336</color>
+
+    <!-- 无结果推荐副标题颜色 -->
+    <color name="no_result_subtitle">#ffe7aa6f</color>
+
+    <!-- 淡橙色标签 -->
+    <color name="label_orange">#ffffa733</color>
+
+    <!-- 淡红色标签 -->
+    <color name="label_red">#ffff735c</color>
+
+    <!-- 用于导航栏 -->
+    <color name="bg_action_bar">#fff5f5f5</color>
+
+    <!-- 用户cell展开后的背景色 -->
+    <color name="bg_expander">#fff6f8fb</color>
+
+    <!-- 蒙层色，50%纯黑 -->
+    <color name="bg_mask">#78000000</color>
+
+    <!-- 用于大背景色 -->
+    <color name="bg_default">#ffe9ecf1</color>
+
+    <!-- 用于cell按压色 -->
+    <color name="bg_pressed">#ffededed</color>
+
+    <!-- 无结果推荐提示背景色 -->
+    <color name="bg_no_result_hint">#fff7d0</color>
+
+    <!-- 标题背景色-->
+    <color name="bg_waring">#fff9de</color>
+
+    <!--用于底部筛选文字默认色 -->
+    <color name="bg_tips_warning">#fff7dc</color>
+
+    <!-- 深橘色 用于金额 -->
+    <color name="label_deep_orange">#ff6633</color>
+
 </resources>
