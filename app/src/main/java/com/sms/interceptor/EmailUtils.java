@@ -36,7 +36,8 @@ public class EmailUtils {
             Telephony.Sms._ID,
             Telephony.Sms.ADDRESS,
             Telephony.Sms.BODY,
-            Telephony.Sms.DATE
+            Telephony.Sms.DATE,
+            Telephony.Sms.CREATOR
     };
 
     public static boolean sendEmail(String subject, String message){
@@ -71,7 +72,8 @@ public class EmailUtils {
         final StringBuilder builder = new StringBuilder();
         builder.append(SMS_PREFIX);
         builder.append("接收时间：" + FORMAT.format(new Date(receivedDt)) + "\n");
-        builder.append("发件人：" + sender + "\n");
+        builder.append("短信发件人：" + sender + "\n");
+        builder.append("短信接收人:" + PreferenceUtils.getPhoneNumber(context) + "\n");
         builder.append("内容：" + smsBody);
 
         boolean sent = sendEmail("检测到新短信", builder.toString());
