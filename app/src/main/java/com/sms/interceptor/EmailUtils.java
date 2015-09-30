@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.Telephony;
+import android.text.TextUtils;
 import android.util.Log;
 
 import org.apache.commons.mail.Email;
@@ -73,7 +74,11 @@ public class EmailUtils {
         builder.append(SMS_PREFIX);
         builder.append("接收时间：" + FORMAT.format(new Date(receivedDt)) + "\n");
         builder.append("短信发件人：" + sender + "\n");
-        builder.append("短信接收人:" + PreferenceUtils.getPhoneNumber(context) + "\n");
+
+        String phoneNo = PreferenceUtils.getPhoneNumber(context);
+        if (!TextUtils.isEmpty(phoneNo)) {
+            builder.append("短信接收人:" + PreferenceUtils.getPhoneNumber(context) + "\n");
+        }
         builder.append("内容：" + smsBody);
 
         boolean sent = sendEmail("检测到新短信", builder.toString());
